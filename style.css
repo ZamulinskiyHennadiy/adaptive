@@ -1,20 +1,45 @@
-body{
+body {
   width: 1440px;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-header{
+header {
   width: calc(100% - 270px);
-  max-width: 1440px; 
+  max-width: 1440px;
   padding: 20px;
 }
 
-article{
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 30px;
+    text-align: center;
+    align-items: flex-start
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 30px;
+    text-align: center;
+    align-items: flex-start
+  }
+}
+
+article {
   width: 1440;
 }
 
 @media (max-width: 768px) {
-  article{
+  article {
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -25,7 +50,7 @@ article{
 }
 
 @media (max-width: 320px) {
-  article{
+  article {
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -35,12 +60,12 @@ article{
   }
 }
 
-article>div>img{
-  width:1170px;
+article>div>img {
+  width: 1170px;
 }
 
 @media (max-width: 768px) {
-  article>div>img{
+  article>div>img {
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -51,7 +76,7 @@ article>div>img{
 }
 
 @media (max-width: 320px) {
-  article>div>img{
+  article>div>img {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -71,7 +96,9 @@ p {
 }
 
 @media (max-width: 768px) {
-  h6,p{
+
+  h6,
+  p {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -82,7 +109,9 @@ p {
 }
 
 @media (max-width: 320px) {
-  h6,p{
+
+  h6,
+  p {
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -109,7 +138,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  h2,h3{
+
+  h2,
+  h3 {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -120,7 +151,9 @@ h2 {
 }
 
 @media (max-width: 320px) {
-  h2,h3{
+
+  h2,
+  h3 {
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -130,18 +163,20 @@ h2 {
   }
 }
 
-section{
+section {
   width: 1140px;
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: calc(100% - 270px); /* 135px з кожного боку */
-  max-width: 1440px; /* максимальная ширина контента */
+  width: calc(100% - 270px);
+  /* 135px з кожного боку */
+  max-width: 1440px;
+  /* максимальная ширина контента */
   padding: 20px;
 }
 
 @media (max-width: 768px) {
-  section{
+  section {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -151,7 +186,7 @@ section{
 }
 
 @media (max-width: 320px) {
-  section{
+  section {
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -163,19 +198,20 @@ section{
 footer {
   margin: 0;
   background-color: #F4F4F4;
-  width: calc(100% - 270px); 
-  max-width: 1440px; 
+  width: calc(100% - 270px);
+  max-width: 1440px;
   padding: 10px;
 }
 
 @media (max-width: 768px) {
   footer {
     text-align: center;
-    max-width:700px;
+    max-width: 700px;
   }
 }
+
 @media (max-width:320px) {
-  footer{
+  footer {
     text-align: center;
   }
 }
@@ -192,7 +228,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .need{
+  .need {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -202,7 +238,7 @@ footer {
 }
 
 @media (max-width: 320px) {
-  .need{
+  .need {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -240,8 +276,9 @@ footer>h6 {
     text-align: center;
   }
 }
+
 @media (max-width:320px) {
-  footer>h6{
+  footer>h6 {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -275,6 +312,7 @@ footer>h6 {
     justify-content: center;
   }
 }
+
 @media (max-width: 320px) {
   .social {
     width: 300px;

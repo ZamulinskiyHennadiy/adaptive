@@ -1,0 +1,273 @@
+body{
+  width: 1440px;
+  margin: 0;
+}
+
+article{
+  width: 1440;
+}
+
+@media (max-width: 768px) {
+  article{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 30px;
+    text-align: center;
+    align-items: flex-start
+  }
+}
+
+@media (max-width: 320px) {
+  article{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 30px;
+    text-align: center;
+    align-items: flex-start
+  }
+}
+
+article>div>img{
+  width:1170px;
+}
+
+@media (max-width: 768px) {
+  article>div>img{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 30px;
+    text-align: center;
+    align-items: flex-start
+  }
+}
+
+@media (max-width: 320px) {
+  article>div>img{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 30px;
+    text-align: center;
+    align-items: flex-start
+  }
+}
+
+h6,
+p {
+  color: #7B7B7B;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+@media (max-width: 768px) {
+  h6,p{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 30px;
+    text-align: left;
+    align-items: flex-start
+  }
+}
+
+@media (max-width: 320px) {
+  h6,p{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 30px;
+    text-align: left;
+    align-items: flex-start
+  }
+}
+
+h4 {
+  font-size: 16px;
+  font-family: "Red Hat Display", Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: "Red Hat Display", Arial, sans-serif;
+  font-weight: normal;
+  margin: 0px;
+  padding-top: 38px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  h2,h3{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 30px;
+    text-align: center;
+    align-items: flex-start
+  }
+}
+
+@media (max-width: 320px) {
+  h2,h3{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 30px;
+    text-align: left;
+    align-items: flex-start
+  }
+}
+
+section{
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  section{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  section{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+footer {
+  margin: auto;
+  background-color: #F4F4F4;
+  width: 1440px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
+@media (max-width:320px) {
+  footer{
+    text-align: center;
+  }
+}
+
+.need {
+  width: 1440px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.need>div {
+  width: 350px;
+}
+
+@media (max-width: 768px) {
+  .need{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .need{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+footer h2 {
+  width: 350px;
+  padding-bottom: 0px;
+}
+
+footer h6,
+a {
+  font-size: 16px;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer>h6 {
+  margin: auto;
+  width: 300px;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  footer>h6 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 30px;
+    text-align: center;
+  }
+}
+@media (max-width:320px) {
+  footer>h6{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+.social {
+  display: flex;
+  width: 350px;
+  gap: 23px;
+}
+
+/*social nav*/
+.social>img:hover {
+  background-color: #fff;
+  transition: 500ms;
+  transform: scale(1.2);
+}
+
+.social>img:not(:hover) {
+  transition: 500ms;
+  transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+  .social {
+    width: 700px;
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  .social {
+    width: 300px;
+    padding-bottom: 30px;
+    justify-content: center;
+  }
+}
